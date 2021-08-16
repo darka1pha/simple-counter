@@ -1,0 +1,63 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+	cursor: pointer;
+  user-select: none;
+}
+
+.state_container {
+	position: absolute;
+	font-size: 2rem;
+	background-color: yellow;
+	border: 3px solid violet;
+	height: 85px;
+	width: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	user-select: none;
+}
+
+.left {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	transition: all 400ms ease-in-out;
+}
+
+.left_active {
+	width: 50%;
+	height: 100%;
+	background-color: crimson;
+	transition: all 400ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.right {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	transition: all 400ms ease-in-out;
+}
+
+.right_active {
+	width: 50%;
+	height: 100%;
+	background-color: rgb(54, 241, 95);
+	transition: all 400ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+}
