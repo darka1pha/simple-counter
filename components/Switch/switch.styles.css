@@ -1,24 +1,4 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Switch Styles */
-
-.toggle-btn {
+ .toggle-btn {
   box-sizing: initial;
   display: inline-block;
   outline: 0;
@@ -83,4 +63,3 @@ a {
   width: 1px;
   white-space: nowrap;
 }
-

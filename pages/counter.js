@@ -21,8 +21,10 @@ export default function Home() {
 
 	const onWindowClick = (e) => {
 		if (e.pageX <= width / 2) {
+			console.log("LEFT")
 			dispatch({type: "DECREAMENT"})
 		} else {
+			console.log("RIGHT")
 			dispatch({type: "INCREAMENT"})
 		}
 	}

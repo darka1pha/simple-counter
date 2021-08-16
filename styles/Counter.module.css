@@ -61,3 +61,23 @@
   font-size: 4rem;
   color: white;
 }
+
+@media screen and (max-width:800px) {
+	.right_active {
+		font-size: 2rem;
+	}
+	.left_active {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.right_active {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.left_active {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+}

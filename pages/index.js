@@ -14,6 +14,9 @@ export default function Home() {
 				<Link href="/counter">
 					<a className={styles.counter_button}>Go To Counter</a>
 				</Link>
+				<Link href="/toggle">
+					<a style={{marginLeft:"0.5rem"}} className={styles.counter_button}>Go To Toggle</a>
+				</Link>
 			</div>
 		</div>
 	)
