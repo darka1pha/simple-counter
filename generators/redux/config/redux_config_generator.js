@@ -87,7 +87,7 @@ inquirer.prompt(Questions).then((answers) => {
 	).toString()
 
 	if (usage === "Tsx") {
-		writeFileSync(`rootReducer.tsx`, rootReducer)
+		writeFileSync(`${componentPath}/rootReducer.tsx`, rootReducer)
 		if (next) {
 			if (persist && thunk) {
 				console.log("All Options!!")

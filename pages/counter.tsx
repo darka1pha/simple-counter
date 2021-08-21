@@ -1,5 +1,5 @@
 import Head from "next/head"
-import {useEffect, useReducer, useState} from "react"
+import {useEffect, useLayoutEffect, useReducer, useState} from "react"
 import styles from "../styles/Counter.module.css"
 
 const countReducer = (state, action) => {
@@ -29,8 +29,15 @@ export default function Home() {
 		}
 	}
 
-	useEffect(() => {
+	const onChangeWindowSize = () => {
 		setWidth(window.innerWidth)
+	}
+
+	useEffect(() => {
+		window.addEventListener("resize", (e) => onChangeWindowSize(e))
+		setWidth(window.innerWidth)
+
+		return window.removeEventListener("resize", (e) => onChangeWindowSize(e))
 	}, [width])
 
 	return (
